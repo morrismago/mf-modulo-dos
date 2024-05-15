@@ -1,20 +1,14 @@
 import styles from "./titulo.module.css";
 import Image from "next/image";
 
-export default function Titulo() {
+export default function Titulo({ sessionId }) {
+
   return (
     <>
       <div className={styles.center}>
-        {/* <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        /> */}
-        <h1>Módulo dos</h1>
+        <h1>Módulo dos - sessionId recibido del layout : {sessionId} </h1>
       </div>
     </>
   );
 }
+
